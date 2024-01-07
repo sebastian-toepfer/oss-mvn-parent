@@ -9,6 +9,7 @@
     <artifactId>oss-parent</artifactId>
     <version>0.2.0-SNAPSHOT</version>
 
+    <name>sebastian toepfer's oss maven parent</name>
     <packaging>pom</packaging>
 
     <description>parent for my all my oss projects</description>
