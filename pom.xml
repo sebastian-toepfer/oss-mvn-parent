@@ -42,7 +42,7 @@
         <maven.compiler.release>${maven.compiler.target}</maven.compiler.release>
 
         <error_prone_core.version>2.23.0</error_prone_core.version>
-        <prettierJavaVersion>2.4.0</prettierJavaVersion>
+        <prettierJavaVersion>2.5.0</prettierJavaVersion>
     </properties>
 
     <dependencyManagement>
