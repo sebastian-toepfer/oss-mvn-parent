@@ -11,7 +11,16 @@
 
     <packaging>pom</packaging>
 
+    <description>parent for my all my oss projects</description>
+
     <url>https://github.com/sebastian-toepfer/oss-mvn-parent</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
 
     <developers>
         <developer>
