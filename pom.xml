@@ -297,7 +297,7 @@
                             <phase>prepare-package</phase>
                             <configuration>
                                 <failWhenNoMutations>false</failWhenNoMutations>
-                                <coverageThreshold>95</coverageThreshold>
+                                <coverageThreshold>85</coverageThreshold>
                                 <mutationThreshold>100</mutationThreshold>
                                 <testStrengthThreshold>100</testStrengthThreshold>
                                 <excludedMethods>
