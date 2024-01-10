@@ -302,6 +302,7 @@
                                 <excludedMethods>
                                     <!-- we use toString mainly for debugging purposes -->
                                     <excludeMethod>toString</excludeMethod>
+                                    <exlcudeMethod>hashCode</exlcudeMethod>
                                 </excludedMethods>
                             </configuration>
                         </execution>
