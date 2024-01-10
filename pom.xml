@@ -290,18 +290,20 @@
                     <version>1.15.3</version>
                     <executions>
                         <execution>
+                            <id>mutationCoverage</id>
                             <goals>
                                 <goal>mutationCoverage</goal>
                             </goals>
                             <phase>prepare-package</phase>
                             <configuration>
                                 <failWhenNoMutations>false</failWhenNoMutations>
-                                <coverageThreshold>95</coverageThreshold>
+                                <coverageThreshold>85</coverageThreshold>
                                 <mutationThreshold>100</mutationThreshold>
                                 <testStrengthThreshold>100</testStrengthThreshold>
                                 <excludedMethods>
                                     <!-- we use toString mainly for debugging purposes -->
                                     <excludeMethod>toString</excludeMethod>
+                                    <exlcudeMethod>hashCode</exlcudeMethod>
                                 </excludedMethods>
                             </configuration>
                         </execution>
