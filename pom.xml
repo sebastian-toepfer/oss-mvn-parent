@@ -290,6 +290,7 @@
                     <version>1.15.3</version>
                     <executions>
                         <execution>
+                            <id>mutationCoverage</id>
                             <goals>
                                 <goal>mutationCoverage</goal>
                             </goals>
