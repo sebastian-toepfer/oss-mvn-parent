@@ -13,4 +13,5 @@ jobs:
     uses: sebastian-toepfer/gh-common/.github/workflows/release.yml@v1
     with:
       version: ${{ inputs.version }}
+      versionBumpType: bump-patch
     secrets: inherit
