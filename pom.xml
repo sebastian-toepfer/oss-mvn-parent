@@ -114,6 +114,7 @@
                                 -Xplugin:ErrorProne \
                                 -XepExcludedPaths:.*/target/generated-sources/.* \
                                 -Xep:EqualsGetClass:OFF \
+                                -Xep:UnnecessaryParentheses:OFF \
                                 -Xep:MissingOverride:ERROR \
                                 -Xep:DefaultCharset:ERROR \
                                 -Xep:BadImport:ERROR \
@@ -123,7 +124,8 @@
                                 -Xep:BigDecimalEquals:ERROR \
                                 -Xep:UndefinedEquals:ERROR \
                                 -Xep:StreamResourceLeak:ERROR \
-                                -Xep:NonOverridingEquals:ERROR
+                                -Xep:NonOverridingEquals:ERROR \
+                                -Xep:UnnecessaryMethodReference:ERROR
                             </arg>
                         </compilerArgs>
                         <annotationProcessorPaths>
