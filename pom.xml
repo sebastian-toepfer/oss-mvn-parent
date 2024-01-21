@@ -50,6 +50,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
         <maven.compiler.release>${maven.compiler.target}</maven.compiler.release>
+        <required_java_version>${maven.compiler.target}</required_java_version>
 
         <error_prone_core.version>2.24.1</error_prone_core.version>
         <prettierJavaVersion>2.5.0</prettierJavaVersion>
@@ -150,7 +151,7 @@
                     <version>3.3.0</version>
                 </plugin>
 
-                  <plugin>
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
                     <version>3.2.5</version>
@@ -439,9 +440,17 @@
                             </goals>
                             <configuration>
                                 <rules>
+                                    <requireJavaVersion>
+                                        <version>${required_java_version}</version>
+                                    </requireJavaVersion>
                                     <requireMavenVersion>
                                         <version>3.8.0</version>
                                     </requireMavenVersion>
+
+                                    <banDuplicatePomDependencyVersions/>
+                                    <banDynamicVersions>
+                                        <allowSnapshots>true</allowSnapshots>
+                                    </banDynamicVersions>
                                 </rules>
                             </configuration>
                         </execution>
