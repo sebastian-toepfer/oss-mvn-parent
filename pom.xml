@@ -148,7 +148,7 @@
                     <version>3.3.0</version>
                 </plugin>
 
-                  <plugin>
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
                     <version>3.2.5</version>
@@ -440,6 +440,11 @@
                                     <requireMavenVersion>
                                         <version>3.8.0</version>
                                     </requireMavenVersion>
+
+                                    <banDuplicatePomDependencyVersions/>
+                                    <banDynamicVersions>
+                                        <allowSnapshots>true</allowSnapshots>
+                                    </banDynamicVersions>
                                 </rules>
                             </configuration>
                         </execution>
