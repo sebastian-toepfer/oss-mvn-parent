@@ -126,7 +126,9 @@
                                 -Xep:UndefinedEquals:ERROR \
                                 -Xep:StreamResourceLeak:ERROR \
                                 -Xep:NonOverridingEquals:ERROR \
-                                -Xep:UnnecessaryMethodReference:ERROR
+                                -Xep:UnnecessaryMethodReference:ERROR \
+                                -Xep:ObjectsHashCodePrimitive:ERROR \
+                                -Xep:ClassCanBeStatic:ERROR
                             </arg>
                         </compilerArgs>
                         <annotationProcessorPaths>
