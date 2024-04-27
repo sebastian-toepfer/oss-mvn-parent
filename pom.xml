@@ -53,6 +53,7 @@
         <required_java_version>${maven.compiler.target}</required_java_version>
 
         <error_prone_core.version>2.26.1</error_prone_core.version>
+        <spotbugs.version>4.8.4</spotbugs.version>
         <prettierJavaVersion>2.6.0</prettierJavaVersion>
     </properties>
 
@@ -61,7 +62,7 @@
             <dependency>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-annotations</artifactId>
-                <version>4.8.4</version>
+                <version>${spotbugs.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.errorprone</groupId>
@@ -332,6 +333,13 @@
                             <phase>test-compile</phase>
                         </execution>
                     </executions>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.github.spotbugs</groupId>
+                            <artifactId>spotbugs</artifactId>
+                            <version>${spotbugs.version}</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
 
                 <plugin>
