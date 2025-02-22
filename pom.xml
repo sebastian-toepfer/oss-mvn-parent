@@ -54,7 +54,7 @@
 
         <error_prone_core.version>2.36.0</error_prone_core.version>
         <spotbugs.version>4.9.1</spotbugs.version>
-        <prettierJavaVersion>2.6.6</prettierJavaVersion>
+        <prettierJavaVersion>2.6.7</prettierJavaVersion>
     </properties>
 
     <dependencyManagement>
