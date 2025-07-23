@@ -42,7 +42,7 @@
         <sonar.organization>sebastian-toepfer</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
-        <nexusUrl>https://oss.sonatype.org</nexusUrl>
+        <nexusUrl>https://ossrh-staging-api.central.sonatype.com</nexusUrl>
 
         <prettier.goal>write</prettier.goal>
 
