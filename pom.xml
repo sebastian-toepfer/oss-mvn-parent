@@ -53,7 +53,7 @@
         <required_java_version>${maven.compiler.target}</required_java_version>
 
         <error_prone_core.version>2.50.0</error_prone_core.version>
-        <spotbugs.version>4.10.2</spotbugs.version>
+        <spotbugs.version>4.10.3</spotbugs.version>
         <prettierJavaVersion>2.7.3</prettierJavaVersion>
     </properties>
 
